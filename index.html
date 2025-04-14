@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>날씨 정보</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="도시 이름을 입력하세요">
+            <button id="search-btn">검색</button>
+        </div>
+        <div class="weather-info">
+            <div class="weather-card">
+                <h2 id="city-name"></h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="날씨 아이콘">
+                    <div class="temperature">
+                        <span id="temp"></span>°C
+                    </div>
+                    <div class="description" id="weather-desc"></div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-item">
+                        <span>습도:</span>
+                        <span id="humidity"></span>%
+                    </div>
+                    <div class="info-item">
+                        <span>풍속:</span>
+                        <span id="wind-speed"></span> km/h
+                    </div>
+                </div>
+            </div>
+            <div class="landmarks-section">
+                <h3>주요 랜드마크</h3>
+                <div class="landmarks-container" id="landmarks-container">
+                    <!-- 랜드마크 정보가 여기에 동적으로 추가됩니다 -->
+                </div>
+            </div>
+            <div class="attractions-section">
+                <h3>주요 구경거리</h3>
+                <div class="attractions-container" id="attractions-container">
+                    <!-- 구경거리 정보가 여기에 동적으로 추가됩니다 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
